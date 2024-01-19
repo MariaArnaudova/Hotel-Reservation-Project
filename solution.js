@@ -113,6 +113,23 @@ function getPersonalData(e) {
         fillConfirmReservationData(reservation);
     }
 }
+/*
+// Confirm Reservation
+
+document.querySelector('#confirm-back-btn').addEventListener('click', (e) => getBackToPersonalData(e));
+
+function getBackToPersonalData(e) {
+    e.preventDefault();
+    changeContent('guest-details-form-content');
+}
+
+document.querySelector('#confirm-reservation').addEventListener('click', (e) => showThanksPage(e));
+
+function showThanksPage(e) {
+    e.preventDefault();
+    changeContent('thank-you-content');
+}
+*/
 
 function fillConfirmReservationData(customReservation) {
     document.querySelector('.confirm-reservation #guest-name').textContent = `Name: ${customReservation.name}`;
